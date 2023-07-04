@@ -16,7 +16,7 @@ class Task extends Model
         'project_id',
     ];
 
-    public function division()
+    public function project()
     {
         return $this->belongsTo(Project::class);
     }

@@ -1,36 +1,76 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Task Management Application
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This is a Task Management application built with Laravel.
+## Installation
 
-## Basketball Teams Fabio Paredes
+Follow the steps below to set up the Task Management application:
 
-1. Clone project
-```
-git clone https://github.com/Paredesfabio/tasks-management.git
-```
+1. Clone the project repository:
 
-2. cd tasks-management
+   ```bash
+   git clone https://github.com/Paredesfabio/tasks-management.git
+   ```
 
-3. Run ```composer install```
+2. Change into the project directory:
 
-4. Run ```npm install```
+   ```bash
+   cd tasks-management
+   ```
 
-5. Run ```npm run build```
+3. Install Composer dependencies:
 
-6. Copy the ```.env.template``` file  to ```.env```
+   ```bash
+   composer install
+   ```
 
-7. Create database with docker container
-```
-  docker-compose up -d
-```
+4. Install NPM dependencies:
 
-8. Run migrations ```php artisan migrate```
+   ```bash
+   npm install
+   ```
 
-9. Run seeders ```php artisan db:seed```
+5. Build the assets:
 
-10. Run ```php artisan key:generate```
+   ```bash
+   npm run build
+   ```
+
+6. Copy the `.env.template` file to `.env`:
+
+   ```bash
+   cp .env.template .env
+   ```
+
+7. Create a MySQL database and update the database credentials in the `.env` file.
+
+8. Run the database migrations:
+
+   ```bash
+   php artisan migrate
+   ```
+
+9. Seed the database with sample data:
+
+   ```bash
+   php artisan db:seed
+   ```
+
+10. Generate the application key:
+
+    ```bash
+    php artisan key:generate
+    ```
+
+## Usage
+
+To use the Task Management application, follow these steps:
+
+1. Start the development server:
+
+   ```bash
+   php artisan serve
+   ```
+
+2. Visit `http://localhost:8000` in your web browser.
+
+3. You can now create projects and tasks, manage their priorities, and perform CRUD operations on them.
